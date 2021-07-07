@@ -1,0 +1,257 @@
+#con1 {
+  margin-top:10px;
+  //min-height:300px;
+  //min-width:700px;
+  //overflow: scroll;
+  background-color:#6593AD;
+  color:white;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 90%;
+}
+
+::ng-deep .dropdown-menu {
+  width:91.5%;
+}
+
+#con2 {
+  max-width: 70%;
+}
+
+@media (max-width:700px) {
+  #con2 {
+    margin-right:0;
+    margin-left:0;
+  }
+}
+table {
+  width:70%;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.table-striped > thead > tr {
+  background-color:#6593AD;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color: #8CD2F4;
+}
+
+.table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n) > th {
+  background-color: #6593AD;
+}
+
+@media (min-width:900px) {
+    #con1{
+        width:700px;
+        min-height: 400px;
+        //overflow-x:scroll;
+        margin-top:20px;
+    }
+  .alert {
+    max-width: 70%;
+    margin-right:auto;
+    margin-left:auto;
+  }
+  .progress {
+    width:70%;
+    margin-right:auto;
+    margin-left:auto;
+  }
+  #rightli{
+    margin-left:450px;
+  }
+  :host ::ng-deep .ts1 a.nav-link#tab-pc1 {
+    margin-left: 400px;
+  }
+}
+@media only screen
+and (min-device-width : 768px)
+    and (max-device-width : 1024px) {
+        :host ::ng-deep .ts1 a.nav-link#tab-pc1 {
+    margin-left: 190px;
+  }
+
+}
+@media only screen and (device-width: 768px) {
+  #seal {
+    margin-left: 100px;
+    //margin-top: 40px;
+  }
+    #con2 {
+        max-width: 100%;
+    }
+}
+.col-sm-6{
+  //max-width:100%;
+}
+h3 {
+  margin-top:25px;
+  margin-bottom: 20px;
+  font-weight:500;
+}
+
+@media (min-width:900px) {
+h3 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+}
+label {
+  font-size:14px;
+}
+input {
+  border: 1px solid black;
+}
+.shadow1{
+  box-shadow: 5px 5px 5px grey;
+}
+label {
+  //text-align: left;
+}
+.control-label {
+  text-align: left;
+}
+
+input {
+  //max-width:55%;
+}
+
+i.material-icons{
+    top:-1px;
+    vertical-align: middle;
+    position: relative;
+}
+#err,#err2{
+  margin-top:-20px;
+  margin-bottom:10px;
+}
+
+.table td, th {
+  text-align: center;
+}
+tr >td >img {
+  height:40px;
+  width:40px;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  .alert {
+    max-width: 100%;
+  }
+  .progress {
+    max-width: 100%;
+  }
+  table {
+    width:95%;
+    margin-right:auto;
+    margin-left:auto;
+    font-size:14px;
+  }
+  #rightli {
+    margin-left:0px;
+  }
+  .nav-tabs .nav-item {
+    margin-right:-10px;
+    font-size:0.9em;
+  }
+  .nav-tabs .nav-item {
+    float: right;
+    margin: 0;
+  }
+  .nav > li {
+    float: right;
+  }
+  :host ::ng-deep .ts1 a.nav-link#week {
+    margin-right: -20px;
+  }
+  :host ::ng-deep .ts1 ul.nav-tabs {
+    flex-wrap: nowrap!important;
+    display:inline-flex;;
+  }
+  :host ::ng-deep .ts1 a.nav-link#tab-pc1{
+    margin-left: 12px;
+  }
+}
+
+@media only screen
+  and (device-height: 834px)
+and (device-width: 1112px) {
+  :host ::ng-deep .ts1 a.nav-link#tab-pc1 {
+    margin-left: 190px;
+  }
+}
+
+@media only screen
+and (device-width:800px)
+and (device-height:1280px){
+  :host ::ng-deep .ts1 a.nav-link#tab-pc1 {
+    margin-left: 190px;
+  }
+}
+
+
+
+/*@media (max-width: 768px) {
+
+  ul.navbar-nav, ul.navbar-nav li {
+    display:inline
+  }
+@media (max-width: 768px) {
+
+  ul.navbar-nav li.inline {
+    float: left; // make .inline items to float on mobile
+  }
+  ul.navbar-nav li.last-inline + li {
+    clear: both; // avoid next item to float
+  }
+  ul.navbar-nav li.inline a { // fix broken padding
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+}
+
+<div class="container">
+     <div class="row">
+         <div class="col-md-4 border"><a href="#"><img class="img-responsive size" src="http://i1121.photobucket.com/albums/l514/sterzarino/lightning.jpg"></a>
+         <div class="caption center-block">Test</div>
+     </div>
+ </div>
+</div>
+
+.size {
+  height: 230px;
+  width: 230px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border:5px solid #800000;
+}
+
+ .caption {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: #800000;
+    width: 230px;
+}
+
+  :host ::ng-deep .ts1 a.nav-link#tab-pc1{
+    //margin-left: -140px;
+  }
+  :host ::ng-deep .ts1 a.nav-link#tab-pc1{
+    //margin-left: -140px;
+  }
+  :host ::ng-deep .ts1 nav.tabs{
+  //margin-left: -140px;
+  }
+
+  /*:host ::ng-deep .ts1 a.nav-link#tab-pc1 {
+  margin-left: 450px;
+}*/
+

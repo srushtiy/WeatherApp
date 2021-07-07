@@ -1,0 +1,22 @@
+<div [formGroup]="choicesForm" class="col-sm-3" id="ddmenu">
+  <select ngModel formControlName="choicesControl" class="form-control" id="weatherGraph" (ngModelChange)="onChange($event)">
+    <option *ngFor="let c of choices">{{c}}</option>
+    <!--<option value="T" selected>Temperature</option>
+    <option value="P">Pressure</option>
+    <option value="H">Humidity</option><option value="O">Ozone</option><option value="V">Visibility</option>
+    <option value="W">Wind Speed</option>-->
+  </select>
+</div>
+
+<div id="graphDisplay" style="display: block">
+  <br>
+    <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="chartLabels"
+            [options]="chartOptions"
+            [colors]="myColors"
+            [chartType] = "barChartType"
+            [legend] = "chartLegend"></canvas>
+</div>
+<br>
+<br>

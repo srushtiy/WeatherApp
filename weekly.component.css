@@ -1,0 +1,79 @@
+#weeklyDisplay {
+  width:20%;
+  margin-left: auto;
+  margin-right:auto;
+}
+#chartContainer {
+  height: 350px;
+  width: 60%;
+}
+.modal-content2 {
+  height:350px!important;
+}
+.modal-header {
+  background-color:#6593AD;
+}
+.modal-body {
+  background-color: rgba(154,209,240);
+}
+.col {
+  height:100px;
+}
+.lastset {
+  margin-left:55%;
+}
+.colone {
+  width:60%
+}
+.coltwo {
+  width:40%;
+  margin-left: 40px;
+}
+.row {
+  margin-right:0px;
+  margin-left:0px;
+}
+#weatherimg {
+  width:120px;
+  height:120px;
+}
+#circle {
+  height:10px;
+  width:10px;
+  margin-left: 6px;
+  margin-right: 5px;
+}
+.tempLine {
+  font-size:1.7em;
+  margin-bottom:0px
+}
+.cityLine {
+  font-size:1.5em;
+  margin-bottom:0px
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){
+  #weeklyDisplay {
+    width:90%;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .tempLine {
+    font-size: 1.1em;
+  }
+  .cityLine {
+    font-size: 1.2em;
+  }
+  #weatherimg {
+    width:100px;
+    height:100px;
+  }
+  #chartContainer {
+    height: 350px;
+    width: 80%;
+  }
+  .lastset {
+    margin-left:5%;
+  }
+}

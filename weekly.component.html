@@ -1,0 +1,62 @@
+<!--<p>weekly works!</p>-->
+<br>
+<div id="chartContainer" class="container"></div>
+  <br>
+<br>
+<!--<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>-->
+<ng-template #content let-c="close" let-d="dismiss" style="width:50%;">
+    <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">{{date}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+    <div class="col colone">
+      <p class="cityLine">{{city}}</p>
+      <div class="row"><p class="tempLine">{{temperature}} </p>
+      <img id="circle" src="https://cdn3.iconfinder.com/data/icons/virtual-notebook/16/button_shape_oval-512.png">
+      <p class="tempLine"> F</p></div>
+      {{summary}}.
+    </div>
+    <div class="col coltwo">
+      <img id="weatherimg" src="{{icon}}">
+    </div>
+    </div>
+    <hr>
+    <div class="lastset">
+      Precipitaion: {{precip}}
+      <br>
+      Chance of Rain: {{rain}}%
+      <br>
+      Wind Speed: {{wind}} mph
+      <br>
+      Humidity: {{humidity}}%
+      <br>
+      Visibility: {{visibility}} miles
+    </div>
+  </div>
+</ng-template>
+  <!--<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Save</button>
+  </div>-->
+
+
+<br>
+<br>
+
+
+
+
+
+
+<!--<canvas baseChart [colors]="weeklyColors"
+        [chartType]="barChartType"
+        [options] = "options"
+        [legend]="chartLegend"
+        [datasets]="dataSet"
+        [labels]="chartLabels">
+        [datasets]="rangeChartData"
+        [options]="chartOptions"
+        [legend] = "chartLegend"</canvas>-->

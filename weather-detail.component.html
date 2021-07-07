@@ -1,0 +1,51 @@
+
+  <div class="card border-dark" style="background-color:#9AD1F0;" id="con3">
+    <div class="card-body">
+      <div class="row" id="row1">
+        <div><h4 class="card-title mb-3 row1div">{{city}}</h4>
+      <h4 class="card-subtitle mb-2 text-muted row1div">{{timezone}}</h4>
+      <h3 class="card-text row1div">{{temp}} <img class="mb-4" src="https://cdn3.iconfinder.com/data/icons/virtual-notebook/16/button_shape_oval-512.png" height=10px width=10px> F</h3>
+      <h5 class="card-text row1div">{{summary}}</h5>
+        </div>
+      <div id="imgcon"><img id="seal" src="{{imgSeal}}"><!--<img id="seal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Seal_of_California.svg/2000px-Seal_of_California.svg.png">-->
+      </div>
+      </div>
+      <br>
+      <div class="container-fluid row" id="row2">
+        <div class="wrapper" *ngIf="humidBool">
+			<div class="col"><a class="card-link" ngbTooltip="Humidity"><img class="iconimg" src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-16-512.png"></a>
+			</div>
+          <div class="col"><p>{{humidity}}</p></div>
+		</div>
+        <div class="wrapper" *ngIf="pressBool">
+          <div class="col"><a class="card-link" ngbTooltip="Pressure"><img class="iconimg" src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-25-512.png"></a>
+          </div>
+          <div class="col"><p>{{pressure}}</p></div>
+        </div>
+        <div class="wrapper" *ngIf="windBool">
+          <div class="col"><a class="card-link" ngbTooltip="Wind Speed"><img class="iconimg" src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-27-512.png"></a>
+          </div>
+          <div class="col"><p>{{wind}}</p></div>
+        </div>
+        <div class="wrapper" *ngIf="visibilityBool">
+          <div class="col"><a class="card-link" ngbTooltip="Visibility"><img class="iconimg" src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-30-512.png"></a>
+          </div>
+          <div class="col"><p>{{visibility}}</p></div>
+        </div>
+        <div class="wrapper" *ngIf="ccBool">
+          <div class="col"><a class="card-link" ngbTooltip="Cloud Cover"><img class="iconimg" src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-28-512.png"></a>
+          </div>
+          <div class="col"><p>{{cc}}</p></div>
+        </div>
+        <div class="wrapper" *ngIf="ozoneBool">
+          <div class="col"><a class="card-link" ngbTooltip="Ozone"><img class="iconimg" src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-24-512.png"></a>
+          </div>
+          <div class="col"><p>{{ozone}}</p></div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+
+  <br>
+  <br>
